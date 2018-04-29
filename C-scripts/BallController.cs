@@ -63,16 +63,6 @@ public class BallController : MonoBehaviour
 
     void SwitchDirection()
     {
-        /*
-        if (rb.velocity.x > 0)
-        {
-            rb.velocity = new Vector3(0, 0, speed);
-        }
-        else if (rb.velocity.z > 0)
-        {
-            rb.velocity = new Vector3(speed, 0, 0);
-        }
-        */
 
         if (dir == Vector3.right){
             dir = Vector3.forward;
