@@ -28,26 +28,7 @@ public class BallController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        if (!start && Input.GetMouseButtonDown(0))
-        {
-            rb.velocity = new Vector3(speed, 0, 0);
-            start = true;
-            GameManager.instance.GameStart();
-        }
-        else if (Input.GetMouseButtonDown(0) && !gameOver)
-        {
-            SwitchDirection();
-        }
-        if (!Physics.Raycast(transform.position, Vector3.down, 1f))
-        {
-            rb.velocity = new Vector3(0, -25f, 0);
-            gameOver = true;
-            Camera.main.GetComponent<CameraFollow>().gameOver = true;
-            Destroy(ball, 2f);
-            GameManager.instance.GameOver();
-        }
-        */
+
         float toMove = speed * Time.deltaTime;
 
         if (!start && Input.GetMouseButtonDown(0))
